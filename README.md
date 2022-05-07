@@ -1,1 +1,1 @@
-# mynew
+# chronic-kidney-disease-prediction
