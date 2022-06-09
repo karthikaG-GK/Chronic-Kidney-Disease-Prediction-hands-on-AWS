@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+   
+    </head>
+<body bgcolor="#fad707">
+    <div class="background-img">
+        <br><br>
+        <p align="right">
+            Enter the below informations.. to predict   
+        </p>
+        <div class="box">
+        <form action="{{url_for('disease_prediction')}}" method="post" align="right">
+                                                
+            Age :             <input type="text" name="age" placeholder="ex : 45"><br><br>
+            Blood Preasure:   <input type="text" name="blood_preasure" placeholder="ex : 120"><br><br>
+            Specific Gravity: <input type="text" name="Specific_Gravity" placeholder="ex : 1.01"><br><br>
+            Albumin:          <input type="text" name="Albumin" placeholder="ex : 3"><br><br>
+            Sugar:            <input type="text" name="Sugar" placeholder="ex : 3"><br><br>
+            Red_Blood_cells:  <input type="text" name="Red_Blood_cells" placeholder="normal or abnormal"><br><br>
+            Blood_Glucose:    <input type="text" name="Blood_Glucose" placeholder="ex : 100"><br><br>
+            Blood_Urea:       <input type="text" name="Blood_Urea" placeholder="ex : 50"><br><br>
+            Serum_Creatinine: <input type="text" name="Serum_Creatinine" placeholder="ex : 2"><br><br>
+            Sodium:           <input type="text" name="Sodium" placeholder="ex : 120"><br><br>
+            Potassium:        <input type="text" name="Potassium" placeholder="ex : 4.5"><br><br>
+            Hemoglobin:       <input type="text" name="Hemoglobin" placeholder="ex : 11"><br><br><br><br>
+         </b>
+         <input type="submit" value="Predict">
+    
+    
+     </form>
+    </div>
+    </div>    
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .background-img{
+        background-image: url(/static/images/kidneywallpape.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        height: 100vh;
+    }
+    .box{
+        background-color: rgba(253, 249, 7, 0.815);
+        transform: translate(-50%,-50%);
+        box-shadow: 0 15px 20px rgba(255, 218, 5, 0.548);
+        max-width: 650px;
+        position: relative;
+        background-position: left;
+        display: block;
+        top: 70%;
+        left:1200px;
+        padding: 30px;
+        width: 200px;
+        text-align: right;
+    }
+    p{
+        font-size: larger;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+</html>
