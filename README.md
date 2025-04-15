@@ -1,16 +1,62 @@
-# Chronic Predictify
-This project is done by my personal interest. This is an end to end project. Detailed pipeline is followed in this work..
-1. DataSet gathering
-2. Data Exploratory Analysis
-3. Handling missing values
-4. Feature selection
-5. Encoding
-6. Scaling
-7. Dimension Reduction 
-8. Train and Test split
-9. Training the model
-10. Testing the model
-11. Deployment.
+# 🩺 Chronic Kidney Disease Prediction – Hands-on with AWS
+
+An end-to-end machine learning project focused on predicting Chronic Kidney Disease (CKD) using patient data. This project encompasses data preprocessing, model development, and deployment, offering a practical application of machine learning in the healthcare domain.
+
+# 📌 Project Overview
+
+* This project aims to: Predict CKD based on patient health metrics. Implement a complete ML pipeline, from data collection to deployment.
+  
+# 🔍 Dataset
+
+* **Source:** UCI Machine Learning Repository – Chronic Kidney Disease Dataset
+* **Features:** 24 attributes including age, blood pressure, specific gravity, albumin, sugar, etc.
+* **Target:** Classification into CKD or not.
+
+# Project Structure
+```
+Chronic-Kidney-Disease-Prediction-hands-on-AWS/
+├── data/
+│   └── chronic_kidney_disease.csv
+├── models/
+│   └── trained_model.pkl
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── app.py
+├── requirements.txt
+├── Chronic_disease_classification.ipynb
+├── nextlabs.ipynb
+└── README.md
+```
+# 📈 Methodology
+
+* **Data Collection:** Acquired dataset from UCI repository.
+* **Exploratory Data Analysis (EDA):** Visualized data distributions and relationships.
+* **Data Preprocessing:** Handled missing values, Encoded categorical variables, Scaled numerical features
+* Feature Selection: Identified significant features impacting CKD.
+
+# Model Development:
+
+* Implemented various classification algorithms.
+* Evaluated models using accuracy, precision, recall, and F1-score.
+
+# Model Deployment:
+
+* Developed a Flask web application.
+* Deployed the application using AWS services.
+
+ # 🌐 Deployment on AWS
+
+* The application is deployed using AWS services:
+* EC2: Hosting the Flask application.
+* S3: Storing static files and model artifacts.
+
+# 📊 Results
+
+* Achieved high accuracy in predicting CKD.
+* The web application provides an intuitive interface for users to input patient data and receive predictions.
+
 This is how my applications front page looks.
 ![front page](https://user-images.githubusercontent.com/93076299/172834454-ef1941b2-d635-48dc-8c96-4e721dfbe79b.PNG)
 I provided two options. One is for knowing about the disease. 
